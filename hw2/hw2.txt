@@ -1,0 +1,36 @@
+1) How do you use the SQLite command-line client to open a database? (What is the console command?)
+
+sqlite3 dataBaseName.sqlite.db
+
+2) What does the .schema command do?
+
+The .schema command shows the CREATE statement for a table(s)
+
+3) What dot-commands tell the SQLite command-line client to display data in columns, and with the column headers displayed?
+
+.mode column
+.headers on
+
+4) What does a SELECT statement do?
+
+The SELECT statement is used to query data from a database
+
+5) What does the * symbol mean in a SELECT statement?
+
+The * in the SELECT statement means to select all fields
+
+6) Consider the end of Step 4. Should the query change? Why or why not?
+
+If sqlite can still read the file, the physical file format would not matter. The query wouldn’t need to change because sqlite is a dbms; you do not directly interact with the database, all database interactions are handled through the dbms.
+
+7) What does an INSERT statement do?
+
+The INSERT statement is used to create(add) data in a database. 
+
+8) What does a WHERE clause in an UPDATE statement do?
+
+The WHERE clause specifies which entry(row) to manipulate. If the WHERE clause is absent, every row is changed. 
+
+9) What is the most important thing to remember about a DELETE statement?
+
+You need to specify WHERE the row is you want to DELETE. If you do not, you will delete all rows in the table. 
